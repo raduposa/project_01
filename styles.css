@@ -1,10 +1,10 @@
+/* -----------------------Section Navbar----------------------- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-
-
+    font-family:'Montserrat', sans-serif;
 
 }
 
@@ -14,14 +14,13 @@ body {
 
 }
 
-
 .top-section {
-    padding-top: 60px;
+    padding-top: 55px;
 }
 
 .navbar {
-    padding: 16px 32px;
-
+    /* padding: 16px 32px; */
+    margin-top: 0px;
     position: relative;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
     flex: 15px;
@@ -34,7 +33,7 @@ body {
 }
 
 .navbar-brand {
-    height: 40px;
+    height: 45px;
     padding-left: 10px;
     width: 55%;
     padding-top: 0;
@@ -45,19 +44,24 @@ body {
     align-items: center;
     display: flex;
     position: relative;
+}
 
+.navbar-nav li {
+    padding: 0px 5px;
+    min-width: 100px
+}
 
+.nav-link {
+    text-align: center;
+}
+
+.navbar-nav li a {
+    padding: 0px 5px;
 }
 
 .list li {
     margin: 10px;
     padding: 3px;
-}
-
-.container {
-    display: grid;
-
-
 }
 
 .icons {
@@ -66,6 +70,7 @@ body {
 
 .icon-container {
     display: flex;
+    margin-top: 0;
 }
 
 .icon-container i {
@@ -74,4 +79,289 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
     gap: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+/* !<-------------------Log In Section----------------- */
+.custom-logo-2{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.modal-header{  
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btn-close{
+    align-items: center;
+}
+.modal-title{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+.modal-footer{
+    justify-content: center;
+}
+.text-decoration-none{
+    color: black;
+}
+
+/* <!----------------banner section------------------------ */
+
+.btn_1 {
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    background-color: black;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: lighter;
+    font-weight: 700;
+    line-height: 2;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 0;
+    margin: 0;
+    transition: box-shadow 0.3s ease-in-out; 
+}
+
+.btn_1:hover {
+    box-shadow: 1px 3px 3px 3px rgba(12, 12, 12, 0.1); 
+}
+.btn {
+    /* ... Your existing button styles ... */
+
+    /* Remove the box-shadow from the default style */
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.btn:hover {
+    /* Apply the desired box-shadow only on hover */
+    box-shadow: 5px 6px 6px rgba(210, 14, 14, 0.1); 
+}
+
+.my-custom-heading {
+    font-family: 'Pacifico', cursive;
+    font-weight: 300px;
+    font-size: 5 rem;
+}
+
+.img {
+    margin-top: 60px;
+}
+
+.second-heading {
+
+    font-size: 90px;
+    font-family: 'Gluten', cursive;
+}
+
+.title {
+    font-size: 5rem;
+    margin-top: 100px;
+    font-weight: lighter;
+    line-height: 1;
+}
+
+.subtitle {
+    font-size: lighter;
+    font-weight: 700;
+    line-height: 1.25;
+    padding-bottom: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: lighter;
+    padding-bottom: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    font-size: 10px;
+}
+
+@media (max-width: 767px) {
+    .my-custom-heading {
+        font-size: 3rem;
+      
+    }
+
+    .second-heading {
+        font-size: 48px;
+        
+    }
+
+    .title {
+        font-size: 2rem;
+        
+    }
+
+    .col-md-6 img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .my-custom-heading {
+        font-size: 4rem;
+        
+    }
+
+    .second-heading {
+        font-size: 60px;
+        
+    }
+
+    .title {
+        font-size: 2.5rem;
+        
+    }
+
+    .col-md-6 img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .my-custom-heading {
+        font-size: 4rem; 
+    }
+
+    .second-heading {
+        font-size: 72px; 
+    }
+
+    .title {
+        font-size: 3rem;  
+    }
+
+    .col-md-6 img {
+        max-width: 70%;
+        height: auto;
+    }
+    /* -------------------Section Card vith Video--------------------- */
+}
+
+.card-title{
+    font-size: 32px;
+}
+
+.card-body_1{
+    background-color:#f6f3ec;
+    border: none;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    flex: 1 1 auto;
+    max-width:max-content;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 25px;
+}
+.custom-card {
+     
+    overflow: hidden; 
+    margin-bottom: 50px;
+}
+.card_1{
+    background-color: #ffb50a;
+    border: none;
+   
+}
+
+/* ----------------------Section Body---------------------- */
+
+
+.section_header{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+#new-section{
+    background-color: #f6f3ec;
+}
+.card{
+    overflow: hidden; 
+    margin-bottom: 50px;
+    background-color: rgb(223, 133, 74);
+    /* border-width: 0cap; */
+    border-radius: 10px;
+    padding: 0%;
+    margin: 0px;
+}
+/* ----------------------------Section Rating with Stars----------------------------- */
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .stars::before {
+    content: "★★★★★";
+    letter-spacing: 3px;
+    font-size: 1.5em;
+  }
+  
+  .stars {
+    --rating: 0;
+    display: inline-block;
+    font-size: 0;
+    position: relative;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+  
+  .stars::before {
+    content: "★★★★★";
+    letter-spacing: 3px;
+    font-size: 1.5em;
+    color: #f0d019;
+  }
+  
+  .stars::after {
+    content: "★★★★★";
+    color: #050505;
+    letter-spacing: 3px;
+    font-size: 1.5em;
+  }
+  
+  .stars::before,
+  .stars::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: calc(var(--rating) / 5 * 100%);
+  }
+  
+  .rating-number {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
