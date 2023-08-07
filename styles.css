@@ -63,6 +63,7 @@ body {
     margin: 10px;
     padding: 3px;
 }
+/* -----------------Section Icons----------------- */
 
 .icons {
     color: black;
@@ -71,6 +72,7 @@ body {
 .icon-container {
     display: flex;
     margin-top: 0;
+    justify-content: center;
 }
 
 .icon-container i {
@@ -148,10 +150,6 @@ body {
     box-shadow: 1px 3px 3px 3px rgba(12, 12, 12, 0.1); 
 }
 .btn {
-    /* ... Your existing button styles ... */
-
-    /* Remove the box-shadow from the default style */
-    box-shadow: none;
     transition: box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
 }
 
@@ -263,7 +261,7 @@ p {
         max-width: 70%;
         height: auto;
     }
-    /* -------------------Section Card vith Video--------------------- */
+/* -------------------Section Card vith Video--------------------- */
 }
 
 .card-title{
@@ -297,7 +295,6 @@ p {
 
 /* ----------------------Section Body---------------------- */
 
-
 .section_header{
     margin-top: 50px;
     margin-bottom: 25px;
@@ -308,60 +305,89 @@ p {
 .card{
     overflow: hidden; 
     margin-bottom: 50px;
-    background-color: rgb(223, 133, 74);
-    /* border-width: 0cap; */
+    background-color: rgb(140, 211, 235);
+    border-width: 0px;
     border-radius: 10px;
     padding: 0%;
     margin: 0px;
 }
-/* ----------------------------Section Rating with Stars----------------------------- */
+/* ----------------------------Section Rating with Stars Cards----------------------------- */
 
 .rating {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .stars::before {
-    content: "★★★★★";
-    letter-spacing: 3px;
-    font-size: 1.5em;
-  }
-  
-  .stars {
-    --rating: 0;
     display: inline-block;
-    font-size: 0;
-    position: relative;
-    unicode-bidi: bidi-override;
-    direction: rtl;
+    align-items: center;
+    display: flex;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
   }
   
-  .stars::before {
+.stars::before {
     content: "★★★★★";
-    letter-spacing: 3px;
-    font-size: 1.5em;
-    color: #f0d019;
-  }
-  
-  .stars::after {
-    content: "★★★★★";
-    color: #050505;
-    letter-spacing: 3px;
-    font-size: 1.5em;
-  }
-  
-  .stars::before,
-  .stars::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
+    color: gold;
+    font-size: 0.9rem;
     width: calc(var(--rating) / 5 * 100%);
+    overflow: hidden;
+    white-space: nowrap;
   }
   
-  .rating-number {
-    margin-left: 10px;
+  
+.rating-number {
+    margin-left: 15px;
     font-weight: bold;
   }
+.btn{
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
+.image01{
+    width: 80px;
+    height: auto;
+    border-radius: 100%;
+    margin: 0 auto;
+    border: 4px solid rgba(0,0,0,0);
+    transition: border-color 0.3s ease-in-out;
+  }
+.name{
+    display: block;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: smaller;
+  }
+.card-subtitle{
+    margin-left: 15px;
+  }
+  /* -------------------Section Cards---------------------- */
+.card-body-1{
+    border-width: none;
+    padding: 1%;
+    background-color: blanchedalmond;
+}
+.img-bottom-card{
+    width: 80px;
+    height: auto;
+    border-radius: 100%;
+    margin: 0 auto;
+    border: 4px solid rgba(0,0,0,0);
+    transition: border-color 0.3s ease-in-out;
+}
+.title {
+    display: block;
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 10px;
+    margin-top: 0%;
+
+}
+.horizontal-pair {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
   
+
+
+
+
+ 
